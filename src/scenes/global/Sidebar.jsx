@@ -15,10 +15,10 @@ import LocalFireDepartmentIcon from "@mui/icons-material/LocalFireDepartment";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import KeyboardTabIcon from "@mui/icons-material/KeyboardTab";
 
-const Item = ({ title, to, icon, selected, setSelected }) => {
+const Item = ({ title, subtitle, to, icon, selected, setSelected }) => {
   return (
     <MenuItem
-      active={selected === title}
+      active={selected === subtitle}
       style={{ color: "grey" }}
       onClick={() => setSelected(title)}
       icon={icon}
@@ -81,7 +81,8 @@ const Sidebar = () => {
 
           <Box paddingLeft={isCollapsed ? undefined : "10%"}>
             <Item
-              title="My First Project"
+              title="Project"
+              subtitle="My First Project"
               icon={<FavoriteIcon />}
               to="/"
               selected={selected}
@@ -89,6 +90,7 @@ const Sidebar = () => {
             />
             <Item
               title="Dashboard"
+              subtitle="Dashboard"
               to="/dashboard"
               icon={<DashboardIcon />}
               selected={selected}
@@ -96,6 +98,7 @@ const Sidebar = () => {
             />
             <Item
               title="Recipes"
+              subtitle="Recipes"
               to="/recipes"
               icon={<Icon icon="mdi:chef-hat" />}
               selected={selected}
@@ -104,6 +107,7 @@ const Sidebar = () => {
             <Box sx={{ width: 1, borderBottom: 1 }}></Box>
             <Item
               title="Blog"
+              subtitle="Blog"
               to="/blog"
               icon={<FeedIcon />}
               selected={selected}
@@ -111,6 +115,7 @@ const Sidebar = () => {
             />
             <Item
               title="Templates"
+              subtitle="Templates"
               to="/templates"
               icon={<ExtensionIcon />}
               selected={selected}
@@ -118,6 +123,7 @@ const Sidebar = () => {
             />
             <Item
               title="Favorites"
+              subtitle="Favorites"
               to="/favorites"
               icon={<FavoriteIcon />}
               selected={selected}
@@ -125,6 +131,7 @@ const Sidebar = () => {
             />
             <Item
               title="CustomTemplate"
+              subtitle="CustomTemplate"
               to="/customtemplate"
               icon={<CircleIcon />}
               selected={selected}
@@ -132,6 +139,7 @@ const Sidebar = () => {
             />
             <Item
               title="Integrations"
+              subtitle="Integrations"
               to="/integrations"
               icon={<LayersIcon />}
               selected={selected}
@@ -139,6 +147,7 @@ const Sidebar = () => {
             />
             <Item
               title="Semrush"
+              subtitle="Semrush"
               to="/semrush"
               icon={<LocalFireDepartmentIcon />}
               selected={selected}

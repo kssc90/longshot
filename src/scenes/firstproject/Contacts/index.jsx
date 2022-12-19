@@ -1,10 +1,8 @@
 import { Box } from "@mui/material";
 import { DataGrid, GridToolbar } from "@mui/x-data-grid";
-import { mockDataContacts } from "../../data/mockData";
-import Header from "../../components/Header";
+import { mockDataContacts } from "../../../data/mockData";
 
 const Contacts = () => {
-
   const columns = [
     { field: "id", headerName: "ID", flex: 0.5 },
     { field: "registrarId", headerName: "Registrar ID" },
@@ -20,7 +18,7 @@ const Contacts = () => {
       type: "number",
       headerAlign: "left",
       align: "left",
-      flex: 0.5
+      flex: 0.5,
     },
     { field: "phone", headerName: "Phone Number", flex: 1 },
     { field: "email", headerName: "Email", flex: 1 },
@@ -30,10 +28,6 @@ const Contacts = () => {
   ];
   return (
     <Box m="20px">
-      <Header
-        title="CONTACTS"
-        subtitle="List of Contacts for Future Reference"
-      />
       <Box
         m="40px 0 0 0"
         height="75vh"
