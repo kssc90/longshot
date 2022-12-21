@@ -5,10 +5,14 @@ import FirstProjectHeader from "./FirstProjectHeader";
 
 const FirstProject = () => {
   return (
-    <>
-      <FirstProjectHeader />
-      <Contacts />
-    </>
+    <div style={{ backgroundColor: "#f9fafc" }}>
+      <header>
+        <FirstProjectHeader />
+      </header>
+      <main>
+        <Contacts />
+      </main>
+    </div>
   );
 };
 
